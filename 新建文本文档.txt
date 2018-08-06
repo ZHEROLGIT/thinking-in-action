@@ -1,0 +1,67 @@
+HttpRequestUtil是干什么用的，调用第三方接口
+雪花随机数：产生一个随机数
+序列化和反序列化
+
+alt 属性， 是当图片无法显示时的替代文本。alt 属性对于盲人或视觉障碍的用户理解图片中的内容非常重要，
+搜索引擎也会搜索alt 属性来了解图片的内容。
+每个单选按钮都应该嵌套在自己的 label(标签) 元素中。
+
+
+String最慢的原因：String为字符串常量，而StringBuilder和StringBuffer均为字符串变量，
+即String对象一旦创建之后该对象是不可更改的，但后两者的对象是变量，是可以更改的。
+（Java中对String对象进行的操作实际上是一个不断创建新的对象并且将旧的对象回收的一个过程，所以执行速度很慢。）
+StringBuilder和StringBuffer的对象是变量，对变量进行操作就是直接对该对象进行更改，而不进行创建和回收的操作，所以速度要比String快很多
+
+
+在线程安全上，StringBuilder是线程不安全的，而StringBuffer是线程安全的
+
+　　如果一个StringBuffer对象在字符串缓冲区被多个线程使用时，StringBuffer中很多方法可以带有synchronized关键字，
+所以可以保证线程是安全的，但StringBuilder的方法则没有该关键字，所以不能保证线程安全，
+有可能会出现一些错误的操作。所以如果要进行的操作是多线程的，那么就要使用StringBuffer，
+但是在单线程的情况下，还是建议使用速度比较快的StringBuilder。
+
+　　3. 总结一下
+　　String：适用于少量的字符串操作的情况
+
+　　StringBuilder：适用于单线程下在字符缓冲区进行大量操作的情况
+
+　　StringBuffer：适用多线程下在字符缓冲区进行大量操作的情况
+
+
+item in items 形式的特殊语法，items 是源数据数组并且 item 是数组元素迭代的别名。
+template 写 html，script写 js，style写样式
+
+
+        SELECT DISTINCT
+    c.id firstId,
+	c.`name` firstname,
+	b.id secondId,
+	b.`name` secondname,
+	a.id thirdId,
+	a.`name` thirdname,
+	d.user_name,
+	d.phone,
+	d.id_card,
+	d.province_name,
+	d.city_name,
+	d.referrer_amount,
+	d.create_date,
+	d.`status`
+        FROM
+	medical_enterprise_area a
+        LEFT JOIN medical_enterprise_area b ON a.parent_id = b.id
+        LEFT JOIN medical_enterprise_area c ON a.grandparent_id = c.id
+        LEFT JOIN medical_user d ON a.id = d.third_area
+        WHERE
+	a.parent_id != 0
+        AND a.grandparent_id != 0
+        AND a.enterprise_id = 3199521327848
+        AND a.id = 6
+
+
+
+
+
+
+
+
