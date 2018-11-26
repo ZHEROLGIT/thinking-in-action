@@ -1,0 +1,30 @@
+1.将JetbrainsIdesCrack-3.4-release-enc.jar这个包放到idea的安装目录下，也就是bin目录下
+2.修改bin目录下的idea.exe.vmoptions和idea64.exe.vmoptions文件，添加一行-javaagent:D:\Develop\IntelliJ IDEA 15.0.6\bin\JetbrainsCrack-2.6.2.jar。目录要按照实际的目录来看。
+3.之后重启idea，进入Register，（help里面）。选择Activation Code，修改用户名密码
+ThisCrackLicenseId-{
+"licenseId":"ThisCrackLicenseId",
+"licenseeName":"你想要的用户名",
+"assigneeName":"",
+"assigneeEmail":"随便填一个邮箱(我填的:idea@163.com)",
+"licenseRestriction":"For This Crack, Only Test! Please support genuine!!!",
+"checkConcurrentUse":false,
+"products":[
+{"code":"II","paidUpTo":"2099-12-31"},
+{"code":"DM","paidUpTo":"2099-12-31"},
+{"code":"AC","paidUpTo":"2099-12-31"},
+{"code":"RS0","paidUpTo":"2099-12-31"},
+{"code":"WS","paidUpTo":"2099-12-31"},
+{"code":"DPN","paidUpTo":"2099-12-31"},
+{"code":"RC","paidUpTo":"2099-12-31"},
+{"code":"PS","paidUpTo":"2099-12-31"},
+{"code":"DC","paidUpTo":"2099-12-31"},
+{"code":"RM","paidUpTo":"2099-12-31"},
+{"code":"CL","paidUpTo":"2099-12-31"},
+{"code":"PC","paidUpTo":"2099-12-31"}
+],
+"hash":"2911276/0",
+"gracePeriodDays":7,
+"autoProlongated":false}
+
+破解地址：https://blog.csdn.net/qq_24504453/article/details/77407329
+lanyu地址：http://idea.lanyus.com/

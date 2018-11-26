@@ -1,0 +1,2 @@
+1.maven配置时，修改配置文件
+2.idea全局配置maven，直接在default settings里面修改maven
